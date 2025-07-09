@@ -20,8 +20,12 @@ export default function Logout() {
     ).then((result) => {
       if (result.isConfirmed) {
         logout();
-        navigate("/login");
-        dispararSweetBasico("Sesión cerrada", "Has cerrado sesión con éxito", "success");
+
+        setTimeout(() => {
+          navigate("/login");
+          dispararSweetBasico("Sesión cerrada", "Has cerrado sesión con éxito", "success");
+        }, 200);
+
       } else {
         setLoading(false);
       }
