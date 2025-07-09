@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #111; /* texto oscuro */
+  background-color: #fff; /* fondo claro */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f2f4f8;
+  color: #333;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.1); /* más visible */
+  padding: 40px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Centrar contenedor principal */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #667eea;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a67d8;
+  box-shadow: 0 4px 10px rgba(90, 103, 216, 0.5);
+}
+
+button:active {
+  transform: translateY(1px); /* efecto presión */
+}
+
+a, button, .producto-card {
+  transition: transform 0.3s ease;
+}
+
+a:hover, .producto-card:hover {
+  transform: scale(1.05); /* escala */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* mantiene proporción */
+  border-radius: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #6c63ff;
+  text-decoration: underline;
+}
+
+.producto-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  color: #000;
+}

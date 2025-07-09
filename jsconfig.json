@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src", // Base de las rutas relativas, en este caso es el directorio src
+    "paths": {
+      "@components/*": ["src/components/*"], // Alias para la carpeta src/components
+      "@assets/*": ["src/assets/*"], // Alias para la carpeta src/assets
+      "@styles/*": ["src/styles/*"] // Alias para la carpeta src/styles
+    }
+  },
+  "include": [
+    "src/**/*" // Incluye todos los archivos dentro de src
+  ],
+  "exclude": [
+    "node_modules" // Excluye node_modules, que es donde residen las dependencias
+  ]
+}

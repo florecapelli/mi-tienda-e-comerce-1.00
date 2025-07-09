@@ -1,0 +1,75 @@
+.formulario-registro {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.campo input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.campo input:focus {
+  border-color: #764ba2;
+  outline: none;
+}
+
+.boton-registrarse {
+  width: 100%;
+  padding: 12px;
+  background-color: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-registrarse:hover {
+  background-color: #5a3680;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .formulario-registro {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .campo input {
+    font-size: 0.95rem;
+  }
+
+  .boton-registrarse {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}

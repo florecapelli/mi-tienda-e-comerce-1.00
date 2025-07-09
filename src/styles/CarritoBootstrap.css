@@ -1,0 +1,101 @@
+/* 🎯 Contenedor principal del carrito */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🛒 Título del carrito */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* 🧾 Estilo general de las tarjetas del carrito */
+.carrito-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+/* 🖼 Imagen del producto */
+.carrito-image {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 📦 Nombre y descripción */
+.carrito-producto {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.descripcion-carrito {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 🔘 Botón eliminar */
+.boton-carrito {
+  background-color: #ef5350;
+  border: none;
+  padding: 6px 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-carrito:hover {
+  background-color: #d32f2f;
+}
+
+/* 📊 Total */
+.total-carrito {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+  text-align: right;
+  margin-top: 2rem;
+}
+
+/* 🗑 Botón vaciar */
+.btn-vaciar {
+  background-color: #dc3545;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-vaciar:hover {
+  background-color: #b02a37;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .carrito-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carrito-producto,
+  .descripcion-carrito {
+    margin-top: 10px;
+  }
+
+  .total-carrito {
+    text-align: center;
+  }
+}
+/* Para botones separados */
+.mb-4.me-2 {
+  margin-right: 0.5rem;
+}

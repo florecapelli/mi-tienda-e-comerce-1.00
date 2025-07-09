@@ -1,0 +1,15 @@
+#root {
+  max-width: 1200px;  /* No se hace muy ancho en pantallas grandes */
+  width: 100%;        /* Ocupa todo el ancho disponible */
+  margin: 0 auto;     /* Centra horizontalmente */
+  padding: 1rem 2rem; /* Espacio interno, más horizontal que vertical */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Opcional: ajustar padding en pantallas chicas */
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+  }
+}

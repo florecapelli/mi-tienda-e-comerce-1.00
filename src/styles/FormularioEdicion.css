@@ -1,0 +1,106 @@
+/* 📦 Contenedor del formulario */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🧾 Título del formulario */
+form h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+/* 📐 Espaciado entre campos */
+form div {
+  margin-bottom: 1rem;
+}
+
+/* 🏷️ Etiquetas */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+/* 🧾 Inputs y textarea accesibles */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🌈 Estilo al enfocar inputs */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px #4caf50;
+}
+
+/* 📝 Ajustes especiales para textarea */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* 🔘 Botón con feedback visual */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #45a049;
+  transform: scale(1.03);
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ❗ Estilos para mensajes de error */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  form {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 0.95rem;
+  }
+}
